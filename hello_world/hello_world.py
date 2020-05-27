@@ -5,10 +5,10 @@ class HelloWorld:
     def say_hello(self, name):
         return 'Hello, ' + name
 
-    def fibonacci(self, num):
-        if num == 0:
-            return 0
-        elif num == 2 or num == 1:
-            return 1
-        else:
-            return self.fibonacci(num - 2) + self.fibonacci(num - 1)
+    def fibonacci(self, n):
+        table = [0,1]
+        
+        for i in range(2,n+1):
+            table.append(table[i-2] + table[i-1])
+
+        return table[n]
