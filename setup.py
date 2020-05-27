@@ -11,7 +11,7 @@ with open('HISTORY.md') as history_file:
 
 setup_args = dict(
     name='aws_jsiisamples.jsii_native_python',
-    version='1.5.0',
+    version='1.6.0',
     description='A simple Python library to benchmark against a jsii module with similar, simple logic.',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
